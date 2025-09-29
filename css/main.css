@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #333;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.header-site {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+.header-top-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+.header-logo {
+    height: 40px;
+    cursor: pointer;
+}
+.header-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.header-item {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.header-item:hover {
+    color: #007BFF;
+}
+
+.header-btn-wrapper .header-btn {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 
+        transform 0.3s , 
+        background 0.3s , 
+        box-shadow 0.3s ;
+}
+
+.header-btn-wrapper .header-btn:hover {
+    background: #0056b3;
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+}
+
+.header-btn-wrapper .header-btn:active {
+    transform: scale(0.92);
+    box-shadow: 0 4px 12px rgba(0, 86, 179, 0.6);
+}
+@keyframes pulse {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Doimiy puls effekti uchun */
+.header-btn-wrapper .header-btn.pulse {
+    animation: pulse 1.5s infinite;
+}
