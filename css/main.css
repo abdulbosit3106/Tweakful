@@ -24,7 +24,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    /* height: 80px; */
+    gap: 5  0px;
 }
 .header-logo {
     height: 40px;
@@ -101,17 +102,15 @@ body {
 .header-btn-wrapper{
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 .secti-lin{
     width: 250px;
-    height: 52px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
+    height: 42px;
     display: flex;
-    gap: 10px;
     align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
 }
 .secti-img-logo {
     width: 50.px;
@@ -215,4 +214,30 @@ body {
 
 .cta-button:hover {
     background-color: #4338ca;
+}
+.section-link-block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.section-intro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.section-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.info-main {
+    display: flex;
+    gap: 50px;
+}
+.promo-section {
+    font-size: 35px;
+    line-height: 62px;
+    margin-bottom: 50px;
 }
